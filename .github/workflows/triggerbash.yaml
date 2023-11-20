@@ -2,7 +2,7 @@ name: Trigger Bash Script
 
 on:
   push:
-    branches: ['dev']
+    branches: ['main']
   workflow_dispatch:
 
 defaults:
