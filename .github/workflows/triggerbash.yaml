@@ -18,5 +18,5 @@ jobs:
 
       - name: Trigger Bash Script
         run: |
-          chmod +x adduser.sh
-          sh adduser.sh
+          chmod +x useradd.sh
+          sh useradd.sh
