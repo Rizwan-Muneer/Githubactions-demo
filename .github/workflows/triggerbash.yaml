@@ -1,0 +1,22 @@
+name: Trigger Bash Script
+
+on:
+  push:
+    branches: ['dev']
+  workflow_dispatch:
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Trigger Bash Script
+        run: |
+          chmod +x adduser.sh
+          sh adduser.sh
