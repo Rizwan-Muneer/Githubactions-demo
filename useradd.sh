@@ -1,1 +1,1 @@
-sudo adduser Rizwan
+sudo adduser rizwan
